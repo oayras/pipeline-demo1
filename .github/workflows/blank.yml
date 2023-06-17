@@ -1,0 +1,15 @@
+name: dotnet Build
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [10.x]
+        steps:
+
+        - uses: actions/checkout@main
+
+        - run: ls -la
