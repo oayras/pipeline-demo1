@@ -18,3 +18,8 @@ jobs:
             ls -la
             echo $OAS_NAME
             pwd
+            
+        - uses: actions/upload-artifact@v3.1.2
+          with:
+            name: mi-archivo-file
+            path: /home/runner/work/pipeline-demo1/pipeline-demo1/fileToArtifact.txt
