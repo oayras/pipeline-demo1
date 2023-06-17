@@ -14,5 +14,7 @@ jobs:
 
         - uses: actions/checkout@main
 
-        - run: ls -la
-        - run: echo $OAS_NAME
+        - run: |
+            ls -la
+            echo $OAS_NAME
+            pwd
