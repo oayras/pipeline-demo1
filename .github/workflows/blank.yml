@@ -16,5 +16,4 @@ jobs:
 
         - run: ls -la
         - run: echo $OAS_NAME
-        - run: echo $ENV
-        - run: echo $env
+        - run: echo $GITHUB_ACTION
