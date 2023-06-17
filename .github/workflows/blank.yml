@@ -8,8 +8,11 @@ jobs:
         strategy:
             matrix:
                 node-version: [10.x]
+        env:
+           OAS_NAME: Oscar Ayra
         steps:
 
         - uses: actions/checkout@main
 
         - run: ls -la
+        - run: echo $OAS_NAME
